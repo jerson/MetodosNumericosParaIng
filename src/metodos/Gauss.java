@@ -179,9 +179,9 @@ public class Gauss extends Base {
         int cantidad = consola.getEntero("Ingresa el Numero de Ecuaciones",3);
         double[][] matriz = consola.getMatriz(cantidad + 1, cantidad);
 
-        boolean pivoteo = consola.getBoolean("¿Quieres usar Pivoteo Parcial?");
-        boolean fraccion = consola.getBoolean("¿Quieres usar Fraccciones?");
-        int decimales = consola.getEntero("¿cuantos decimales queres usar para el reporte?", 4);
+        boolean pivoteo = consola.getBoolean("Quieres usar Pivoteo Parcial?");
+        boolean fraccion = consola.getBoolean("Quieres usar Fraccciones?");
+        int decimales = consola.getEntero("cuantos decimales queres usar para el reporte?", 4);
 
         consola.limpiarPantalla();
 

@@ -118,7 +118,7 @@ public class MetodoNeville {
        
 
         menu.agregar("Ejercicios", submenu);
-        menu.agregar("Ingresar Funcion", new MenuCallback() {
+        menu.agregar("Ingresar Datos", new MenuCallback() {
             public void ejecutar() {
 
                 metodo.consola();

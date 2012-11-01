@@ -82,7 +82,7 @@ public class MetodoGaussSeidel {
         });
 
         menu.agregar("Ejercicios", submenu);
-        menu.agregar("Ingresar Funcion", new MenuCallback() {
+        menu.agregar("Ingresar Matriz", new MenuCallback() {
             public void ejecutar() {
 
                 metodo.consola();
