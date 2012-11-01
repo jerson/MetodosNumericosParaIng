@@ -29,7 +29,7 @@ public class Lagrange extends Base {
         
         this.reportarcoordenadas(xi, fxi);
 
-        System.out.println("X = "+x);
+        System.out.println("x = "+x);
         System.out.println("");
 
         System.out.println("Y(x)=[");

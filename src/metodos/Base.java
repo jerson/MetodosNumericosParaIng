@@ -54,8 +54,8 @@ public class Base {
         return tmp;
     }
 
-    public String redondear(double numero, int sizestring, boolean centrado) {
-        return this.redondear(numero, this.decimales, sizestring, centrado);
+    public String redondear(double numero, int ancho, boolean centrado) {
+        return this.redondear(numero, this.decimales, ancho, centrado);
     }
 
     public String redondear(double numero, boolean centrado) {
@@ -70,11 +70,11 @@ public class Base {
         return Double.parseDouble(this.redondear(numero, decimales, 0));
     }
 
-    public String redondear(double numero, int decimales, int sizestring) {
-        return this.redondear(numero, decimales, sizestring, false);
+    public String redondear(double numero, int decimales, int ancho) {
+        return this.redondear(numero, decimales, ancho, false);
     }
 
-    public String redondear(double numero, int decimales, int sizestring, boolean centrado) {
+    public String redondear(double numero, int decimales, int ancho, boolean centrado) {
 
         String cadena = "";
         try {
@@ -97,7 +97,7 @@ public class Base {
         }
 
 
-        return this.redondearString(cadena, sizestring, centrado);
+        return this.redondearString(cadena, ancho, centrado);
     }
 
     public double truncar(double decimal, int numeroDecimales) {
@@ -108,14 +108,14 @@ public class Base {
         return decimal;
     }
 
-    public String redondearString(String cadena, int sizestring, boolean centrado) {
+    public String redondearString(String cadena, int ancho, boolean centrado) {
 
         String str = "";
         String str2 = "";
-        if (cadena.length() < sizestring) {
+        if (cadena.length() < ancho) {
 
             if (centrado) {
-                int repetir = sizestring - cadena.length();
+                int repetir = ancho - cadena.length();
 
                 int mitad = Integer.parseInt(repetir / 2 + "");
                 str = this.repetir(" ", mitad);
@@ -123,7 +123,7 @@ public class Base {
                 cadena = str2 + cadena + str;
             } else {
 
-                int repetir = sizestring - cadena.length();
+                int repetir = ancho - cadena.length();
                 str = this.repetir(" ", repetir);
                 cadena = cadena + str;
             }
@@ -141,12 +141,12 @@ public class Base {
         return this.redondearString(cadena, this.espaciado, centrado);
     }
 
-    public String redondear(String cadena, int sizestring) {
-        return this.redondearString(cadena, sizestring, false);
+    public String redondear(String cadena, int ancho) {
+        return this.redondearString(cadena, ancho, false);
     }
 
-    public String redondear(String cadena, int sizestring, boolean centrado) {
-        return this.redondearString(cadena, sizestring, centrado);
+    public String redondear(String cadena, int ancho, boolean centrado) {
+        return this.redondearString(cadena, ancho, centrado);
     }
 
     /* temporal */
@@ -158,8 +158,8 @@ public class Base {
         return this.redondearString(cadena, this.espaciado, centrado);
     }
 
-    public String redondearString(String cadena, int sizestring) {
-        return this.redondearString(cadena, sizestring, false);
+    public String redondearString(String cadena, int ancho) {
+        return this.redondearString(cadena, ancho, false);
     }
     /**/
 
@@ -242,8 +242,6 @@ public class Base {
         System.out.println("No se Implemento la consola para este metodo");
     }
 
-
-
     public int getEspaciado(double[][] matriz) {
         int tamano = 0;
         for (int i = 0; i < matriz.length; i++) {
@@ -257,8 +255,8 @@ public class Base {
     }
 
     public void reportarmatriz(double[][] matriz) {
-        int espaciado = this.getEspaciado(matriz);
-        this.reportarmatriz(matriz, espaciado);
+        int ancho= this.getEspaciado(matriz);
+        this.reportarmatriz(matriz, ancho);
     }
 
     public void reportarmatriz(double[][] matriz, int ancho) {
@@ -312,24 +310,65 @@ public class Base {
         System.out.print("\n");
 
     }
-    
-    
 
     public void reportarcoordenadas(double[] x, double[] y) {
 
         int n = x.length;
-        double[][] coordenadas = new double[n][2];
+        double[][] coordenadas = new double[2][n];
 
         for (int j = 0; j < n; j++) {
 
 
-            coordenadas[j][0] = x[j];
-            coordenadas[j][1] = y[j];
+            coordenadas[0][j] = x[j];
+            coordenadas[1][j] = y[j];
 
         }
 
-        this.reportarmatriz(coordenadas);
+        int ancho = this.getEspaciado(coordenadas);
+
+        System.out.println("");
+
+
+        System.out.print("\n");
+
+        for (int i = 0; i < coordenadas.length; i++) {
+
+            if (i == 0) {
+                System.out.print(this.redondear("X", 5, true));
+            } else {
+                System.out.print(this.redondear("f(x)", 5, true));
+            }
+
+            this.reportarFilacoordenadas(coordenadas[i], ancho);
+
+        }
+
+        System.out.println("");
+
+
 
     }
 
+    public void reportarFilacoordenadas(double[] fila, int ancho) {
+
+        System.out.print("[");
+        int n = fila.length;
+        for (int i = 0; i < n; i++) {
+            double numero = fila[i];
+
+            if (i != 0) {
+
+                System.out.print("|" + this.redondear(numero, ancho, true));
+
+            } else {
+                System.out.print(this.redondear(numero, ancho, true));
+
+            }
+
+        }
+
+        System.out.print("]");
+        System.out.print("\n");
+
+    }
 }

@@ -29,7 +29,7 @@ public class Neville extends Newton {
 
         this.reportarcoordenadas(xi, fxi);
 
-        System.out.println("X = " + x);
+        System.out.println("x = " + x);
         System.out.println("");
 
         for (int k = 1; k <= n; k++) {
@@ -52,7 +52,9 @@ public class Neville extends Newton {
         
 
         System.out.println("------------------------------------------------------------");
-        this.reportarmatriz(f);
+        
+        
+        this.reportarmatriz(f,xi,fxi);
         System.out.println("Resultado:");
         System.out.println("Pnx=" + this.redondear(f[0][n]));
 

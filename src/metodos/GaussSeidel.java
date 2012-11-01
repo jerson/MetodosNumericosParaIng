@@ -221,8 +221,8 @@ public class GaussSeidel extends Gauss {
         double error = consola.getNumero("Ingresa la Tolerancia");
         int limite = consola.getEntero("Ingresa el maximo de Iteraciones", 100);
 
-        boolean fraccion = consola.getBoolean("¿Quieres usar Fraccciones?");
-        int decimales = consola.getEntero("¿cuantos decimales queres usar para el reporte?", 4);
+        boolean fraccion = consola.getBoolean("Â¿Quieres usar Fraccciones?");
+        int decimales = consola.getEntero("Â¿cuantos decimales queres usar para el reporte?", 4);
 
         consola.limpiarPantalla();
 

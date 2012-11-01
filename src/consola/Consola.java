@@ -147,15 +147,15 @@ public class Consola {
     public double[][] getCoordenadas(int cantidad) {
         System.out.println("");
 
-        double[][] matriz = new double[cantidad][2];
+        double[][] matriz = new double[2][cantidad];
 
         for (int i = 0; i < cantidad; i++) {
 
-            System.out.println("Los Los Datos para I" + i + "]:");
+            System.out.println("Los Los Datos para I[" + i + "]:");
             for (int j = 0; j < 2; j++) {
 
                 System.out.print("I[" + i + "][" + ((j==0) ? "X" : "Y") + "]:");
-                matriz[i][j] = this.getNumero();
+                matriz[j][i] = this.getNumero();
 
             }
 
@@ -163,6 +163,8 @@ public class Consola {
             System.out.println("");
         }
 
+        
+        
         return matriz;
     }
 

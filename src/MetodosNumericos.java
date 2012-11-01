@@ -97,8 +97,8 @@ public class MetodosNumericos {
         });
         menu.agregar("Interpolacion de Neville", new MenuCallback() {
             public void ejecutar() {
-              //  Neville metodo = new Neville();
-              //  metodo.consola();
+                Neville metodo = new Neville();
+                metodo.consola();
             }
         });
 
