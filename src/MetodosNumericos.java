@@ -101,6 +101,45 @@ public class MetodosNumericos {
                 metodo.consola();
             }
         });
+        
+        
+        menu.agregar("Regla del Trapecio", new MenuCallback() {
+            public void ejecutar() {
+                Trapecio metodo = new Trapecio();
+                metodo.consola();
+            }
+        });
+        menu.agregar("Regla del Trapecio Extendida", new MenuCallback() {
+            public void ejecutar() {
+                TrapecioExtendido metodo = new TrapecioExtendido();
+                metodo.consola();
+            }
+        });
+        menu.agregar("Regla del Simpson 1/3", new MenuCallback() {
+            public void ejecutar() {
+                Simpson1_3 metodo = new Simpson1_3();
+                metodo.consola();
+            }
+        });
+        menu.agregar("Regla del Simpson 1/3 Extendida", new MenuCallback() {
+            public void ejecutar() {
+                Simpson1_3Extendida metodo = new Simpson1_3Extendida();
+                metodo.consola();
+            }
+        });
+        menu.agregar("Regla del Simpson 3/8", new MenuCallback() {
+            public void ejecutar() {
+                Simpson3_8 metodo = new Simpson3_8();
+                metodo.consola();
+            }
+        });
+        menu.agregar("Regla del Simpson 3/8 Extendida", new MenuCallback() {
+            public void ejecutar() {
+                Simpson3_8Extendida metodo = new Simpson3_8Extendida();
+                metodo.consola();
+            }
+        });
+
 
 
 
