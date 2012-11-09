@@ -16,6 +16,12 @@ estan implementados los siguientes metodos:
 - NewtonRaphson
 - PuntoFijo
 - Secante
+- Trapecio
+- Trapecio Extendida
+- Simpson 1/3 
+- Simpson 1/3 Extendida
+- Simpson 3/8 
+- Simpson 3/8 Extendida
 
 hay varios ejemplos por cada metodo, adicionalmente implemente una funcion para poder ingresar manualmente los datos, todo usa consola y tiene un menu por cada metodo
 
