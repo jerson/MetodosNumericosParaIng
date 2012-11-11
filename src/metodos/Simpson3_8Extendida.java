@@ -13,13 +13,9 @@ public class Simpson3_8Extendida extends Base {
     public double evaluar(Funcion funcion, double a, double b, int n) {
 
         double resultado = 0;
-        //System.out.println("funcion.evaluar(a):" + funcion.evaluar(a));
         resultado += funcion.evaluar(a);
 
         double h = ((b - a) / n);
-
-        //System.out.println("h:" + h);
-        double partes = 0;
 
         double partes_1 = 0, partes_2 = 0, partes_3 = 0;
         int pos = 1;
@@ -41,9 +37,6 @@ public class Simpson3_8Extendida extends Base {
             pos++;
 
         }
-       // System.out.println("partes_1" + partes_1);
-       // System.out.println("partes_2:" + partes_2);
-       // System.out.println("partes_3:" + partes_3);
 
         resultado += (3 * partes_1);
         resultado += (3 * partes_2);
@@ -52,12 +45,10 @@ public class Simpson3_8Extendida extends Base {
 
         resultado += funcion.evaluar(b);
 
-        //System.out.println("funcion.evaluar(b):" + funcion.evaluar(b));
-        //System.out.println("((3/8)*h):" + ((3 / 8) * h));
         resultado *= ((3.0 / 8.0) * h);
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println("Pnx=" + this.redondear(resultado));
+        System.out.println( this.redondear(resultado));
 
 
 

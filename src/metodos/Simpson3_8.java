@@ -28,7 +28,7 @@ public class Simpson3_8 extends Base {
         resultado *= (x3 - x0);
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println("Pnx=" + this.redondear(resultado));
+        System.out.println( this.redondear(resultado));
 
 
 

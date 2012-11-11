@@ -24,9 +24,9 @@ public class Simpson1_3 extends Base {
         resultado *= ((b - a) / 6);
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println("Pnx=" + this.redondear(resultado));
+        System.out.println(this.redondear(resultado));
 
-
+ 
 
 
         return resultado;

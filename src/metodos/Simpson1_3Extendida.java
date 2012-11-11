@@ -33,7 +33,7 @@ public class Simpson1_3Extendida extends Base {
         resultado *= ((b - a) / (3 * n));
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println("Pnx=" + this.redondear(resultado));
+        System.out.println( this.redondear(resultado));
 
 
 

@@ -14,7 +14,6 @@ public class TrapecioExtendido extends Base {
 
         double resultado = 0;
         resultado += funcion.evaluar(a);
-        //System.out.println("funcion.evaluar(a)="+funcion.evaluar(a));
 
 
         double h = (b - a) / n;
@@ -29,7 +28,7 @@ public class TrapecioExtendido extends Base {
         resultado *= ((b - a) / (2 * n));
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println("Pnx=" + this.redondear(resultado));
+        System.out.println( this.redondear(resultado));
 
 
 
