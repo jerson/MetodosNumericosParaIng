@@ -40,7 +40,7 @@ public class TrapecioExtendido extends Base {
     public void consola() {
 
         Consola consola = new Consola();
-        String funcion_cadena = consola.getCadena("Ingresa la Derivada");
+        String funcion_cadena = consola.getCadena("Ingresa la Funcion");
         double a = consola.getNumero("Ingresa el Valor para a");
         double b = consola.getNumero("Ingresa el Valor para b");
         int n = consola.getEntero("Ingresa el Numero de Particiones", 4);

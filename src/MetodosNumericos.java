@@ -140,6 +140,13 @@ public class MetodosNumericos {
             }
         });
 
+        menu.agregar("Metodo de Romberg", new MenuCallback() {
+            public void ejecutar() {
+                Romberg metodo = new Romberg();
+                metodo.consola();
+            }
+        });
+
 
 
 

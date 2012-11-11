@@ -40,7 +40,7 @@ public class Simpson3_8 extends Base {
     public void consola() {
 
         Consola consola = new Consola();
-        String funcion_cadena = consola.getCadena("Ingresa la Derivada");
+        String funcion_cadena = consola.getCadena("Ingresa la Funcion");
         double x0 = consola.getNumero("Ingresa el Valor para X0");
         double x1 = consola.getNumero("Ingresa el Valor para X1");
         double x2 = consola.getNumero("Ingresa el Valor para X2");

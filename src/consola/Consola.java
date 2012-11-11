@@ -51,7 +51,7 @@ public class Consola {
     public boolean getBoolean(String mensaje) {
         boolean opcion;
 
-        mensaje = mensaje.equals("") ? mensaje : mensaje + " [SI/NO]";
+        mensaje = mensaje.equals("") ? mensaje : mensaje + " SI/NO [NO]";
         String respuesta = this.getCadena(mensaje);
 
         if (respuesta.equalsIgnoreCase("SI")) {
