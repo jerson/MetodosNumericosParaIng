@@ -140,9 +140,22 @@ public class MetodosNumericos {
             }
         });
 
+
+        menu.agregar("Cuadratura de Gauss", new MenuCallback() {
+            public void ejecutar() {
+                CuadraturaGauss metodo = new CuadraturaGauss();
+                metodo.consola();
+            }
+        });
         menu.agregar("Metodo de Romberg", new MenuCallback() {
             public void ejecutar() {
                 Romberg metodo = new Romberg();
+                metodo.consola();
+            }
+        });
+        menu.agregar("Metodo de Euler", new MenuCallback() {
+            public void ejecutar() {
+                Euler metodo = new Euler();
                 metodo.consola();
             }
         });

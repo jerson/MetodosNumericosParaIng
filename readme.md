@@ -22,6 +22,9 @@ estan implementados los siguientes metodos:
 - Simpson 1/3 Extendida
 - Simpson 3/8 
 - Simpson 3/8 Extendida
+- Cuadratura de Gauss
+- Romberg
+- Euler
 
 hay varios ejemplos por cada metodo, adicionalmente implemente una funcion para poder ingresar manualmente los datos, todo usa consola y tiene un menu por cada metodo
 
