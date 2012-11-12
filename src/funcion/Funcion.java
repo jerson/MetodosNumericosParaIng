@@ -52,12 +52,32 @@ public class Funcion {
         return resultado;
     }
 
+    public double evaluar(double x, double y) {
+        double resultado = 0;
+        try {
+            resultado = this.evaluar(x, y, false);
+        } catch (Exception ex) {
+        }
+
+        return resultado;
+    }
+
     public double evaluar() {
         double resultado = 0;
         try {
             resultado = this.evaluar(false);
         } catch (Exception ex) {
         }
+        return resultado;
+    }
+
+    public double evaluar(double x, double y, boolean error) throws UnknownFunctionException, UnparsableExpressionException {
+        double resultado = 0;
+        Calculable calc = this.parser.withVariable("x", x).withVariable("y", y).build();
+        resultado = calc.calculate();
+
+
+
         return resultado;
     }
 
