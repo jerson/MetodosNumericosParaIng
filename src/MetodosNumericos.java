@@ -159,6 +159,12 @@ public class MetodosNumericos {
                 metodo.consola();
             }
         });
+        menu.agregar("Metodo de Euler Mejorado", new MenuCallback() {
+            public void ejecutar() {
+                EulerMejorado metodo = new EulerMejorado();
+                metodo.consola();
+            }
+        });
 
 
 

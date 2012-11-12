@@ -13,7 +13,7 @@ import java.io.*;
  *
  * @author Gerson
  */
-public class MetodoEuler {
+public class MetodoEulerMejorado {
 
     /**
      * @param args the command line arguments
@@ -21,7 +21,7 @@ public class MetodoEuler {
     public static void main(String[] args) {
 
 
-        final Euler metodo = new Euler();
+        final EulerMejorado metodo = new EulerMejorado();
 
         Menu menu = new Menu();
         menu.setTitulo("Metodo de Euler");
