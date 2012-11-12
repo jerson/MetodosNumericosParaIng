@@ -25,6 +25,7 @@ estan implementados los siguientes metodos:
 - Cuadratura de Gauss
 - Romberg
 - Euler
+- Euler Mejorado
 
 hay varios ejemplos por cada metodo, adicionalmente implemente una funcion para poder ingresar manualmente los datos, todo usa consola y tiene un menu por cada metodo
 

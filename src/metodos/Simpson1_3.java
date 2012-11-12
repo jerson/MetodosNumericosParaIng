@@ -11,7 +11,11 @@ public class Simpson1_3 extends Base {
     }
 
     public double evaluar(Funcion funcion, double a, double b) {
-
+        
+        System.out.println("a: " + a);
+        System.out.println("b: " + b);
+        System.out.println();
+        
         double resultado = 0;
         resultado += funcion.evaluar(a);
 

@@ -12,12 +12,12 @@ public class Trapecio extends Base {
 
     public double evaluar(Funcion funcion, double a, double b) {
 
+        System.out.println("a: " + a);
+        System.out.println("b: " + b);
+        System.out.println();
 
-       // System.out.println("((b - a) / 2) * (f(a) + f(b))");
-       
         double resultado = ((b - a) / 2) * (funcion.evaluar(a) + funcion.evaluar(b));
-        //System.out.println("(("+this.redondear(b) +" - "+this.redondear(a)+") / 2) * ("+this.redondear(funcion.evaluar(a))+" + "+this.redondear(funcion.evaluar(b))+") = "+this.redondear(resultado));
-       
+
 
 
         System.out.println("");

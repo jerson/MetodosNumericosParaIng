@@ -88,8 +88,8 @@ public class Biseccion extends Base {
         double Xa = consola.getNumero("Ingresa el Valor para Xa");
         double Xb = consola.getNumero("Ingresa el Valor para Xb");
         double error = consola.getNumero("Ingresa la Tolerancia");
-        boolean fraccion = consola.getBoolean("¿Quieres usar Fraccciones?");
-        int decimales = consola.getEntero("¿cuantos decimales queres usar para el reporte?", 6);
+        boolean fraccion = consola.getBoolean("Quieres usar Fraccciones?");
+        int decimales = consola.getEntero("cuantos decimales queres usar para el reporte?", 6);
         int espaciado = consola.getEntero("cuanto espacio necesitas para el reporte", 12);
 
         this.fraccion = fraccion;

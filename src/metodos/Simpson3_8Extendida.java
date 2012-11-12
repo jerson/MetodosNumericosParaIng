@@ -12,6 +12,11 @@ public class Simpson3_8Extendida extends Base {
 
     public double evaluar(Funcion funcion, double a, double b, int n) {
 
+        System.out.println("a: " + a);
+        System.out.println("b: " + b);
+        System.out.println("n: " + n);
+        System.out.println();
+
         double resultado = 0;
         resultado += funcion.evaluar(a);
 
@@ -48,7 +53,7 @@ public class Simpson3_8Extendida extends Base {
         resultado *= ((3.0 / 8.0) * h);
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println( this.redondear(resultado));
+        System.out.println(this.redondear(resultado));
 
 
 

@@ -12,6 +12,12 @@ public class Simpson3_8 extends Base {
 
     public double evaluar(Funcion funcion, double x0, double x1, double x2, double x3) {
 
+        System.out.println("x0: " + x0);
+        System.out.println("x1: " + x1);
+        System.out.println("x2: " + x2);
+        System.out.println("x3: " + x3);
+        System.out.println();
+
         double resultado = 0;
         resultado += funcion.evaluar(x0);
 
@@ -28,7 +34,7 @@ public class Simpson3_8 extends Base {
         resultado *= (x3 - x0);
         System.out.println("");
         System.out.println("Resultado:");
-        System.out.println( this.redondear(resultado));
+        System.out.println(this.redondear(resultado));
 
 
 

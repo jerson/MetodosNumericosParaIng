@@ -12,6 +12,11 @@ public class Romberg extends Base {
     
     public double evaluar(Funcion funcion, double a, double b, int n) {
         
+        System.out.println("a: "+a);
+        System.out.println("b: "+b);
+        System.out.println("n: "+n);
+        System.out.println();
+        
         double resultado = 0;
         
         double[][] matriz = new double[n][n];
