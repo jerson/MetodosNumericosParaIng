@@ -197,18 +197,7 @@ public class GaussSeidel extends Gauss {
 
     }
 
-    public double[] inicializar(double[] n) {
-        return this.inicializar(n, 0);
-    }
-
-    public double[] inicializar(double[] n, double defecto) {
-
-        for (int i = 0; i < n.length; i++) {
-            n[i] = defecto;
-        }
-        return n;
-    }
-
+   
     public void consola() {
 
         Consola consola = new Consola();

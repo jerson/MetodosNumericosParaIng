@@ -26,6 +26,7 @@ estan implementados los siguientes metodos:
 - Romberg
 - Euler
 - Euler Mejorado
+- Runge Kutta
 
 hay varios ejemplos por cada metodo, adicionalmente implemente una funcion para poder ingresar manualmente los datos, todo usa consola y tiene un menu por cada metodo
 

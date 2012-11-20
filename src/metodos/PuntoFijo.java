@@ -79,8 +79,8 @@ public class PuntoFijo extends Base {
         double error = consola.getNumero("Ingresa la Tolerancia");
         int limite = consola.getEntero("Ingresa el maximo de Iteraciones", 100);
 
-        boolean fraccion = consola.getBoolean("¿Quieres usar Fraccciones?");
-        int decimales = consola.getEntero("¿cuantos decimales queres usar para el reporte?", 6);
+        boolean fraccion = consola.getBoolean("Quieres usar Fraccciones?");
+        int decimales = consola.getEntero("Cuantos decimales queres usar para el reporte?", 6);
         int espaciado = consola.getEntero("cuanto espacio necesitas para el reporte", 12);
 
         this.fraccion = fraccion;

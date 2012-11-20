@@ -165,6 +165,12 @@ public class MetodosNumericos {
                 metodo.consola();
             }
         });
+        menu.agregar("Metodo de Runge Kutta", new MenuCallback() {
+            public void ejecutar() {
+                RungeKutta metodo = new RungeKutta();
+                metodo.consola();
+            }
+        });
 
 
 

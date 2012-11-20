@@ -371,4 +371,17 @@ public class Base {
         System.out.print("\n");
 
     }
+    
+    public double[] inicializar(double[] n) {
+        return this.inicializar(n, 0);
+    }
+
+    public double[] inicializar(double[] n, double defecto) {
+
+        for (int i = 0; i < n.length; i++) {
+            n[i] = defecto;
+        }
+        return n;
+    }
+
 }
