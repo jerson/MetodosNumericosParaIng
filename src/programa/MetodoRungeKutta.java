@@ -34,13 +34,13 @@ public class MetodoRungeKutta {
 
                 double x0 = 0;
                 double y0 = 1;
-                double xm = 2;
+                double xn = 2;
                
                 int n = 4;
 
                 Funcion funcion = new Funcion("y*x^2-1.2*y");
 
-                metodo.evaluar(funcion, x0, y0, xm, n);
+                metodo.evaluar(funcion, x0, y0, xn, n);
             }
         });
 

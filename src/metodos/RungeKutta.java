@@ -42,7 +42,7 @@ public class RungeKutta extends Base {
      * El metodo orden4 encuentra la solucion de la ecuacion diferencial en un
      * punto.
      *
-     * @param f funcion de la ecuacion diferencial
+     * @param funcion funcion de la ecuacion diferencial
      * @param x0 valor en x anterior
      * @param y0 valor en y anterior
      * @param h incremento
@@ -63,10 +63,10 @@ public class RungeKutta extends Base {
     }
 
     /**
-     * El metodo tabulateOrder4 guarda en una tabla los puntos solucion de la
+     * El metodo evaluar guarda en una tabla los puntos solucion de la
      * ecuacion.
      *
-     * @param f funcion de la ecuacion diferencial
+     * @param funcion funcion de la ecuacion diferencial
      * @param x0 valor x inicial
      * @param y0 valor y inicial
      * @param xn valor x final
@@ -77,7 +77,7 @@ public class RungeKutta extends Base {
 
         System.out.println("x0: " + x0);
         System.out.println("y0: " + y0);
-        System.out.println(" xn: " + xn);
+        System.out.println("xn: " + xn);
         System.out.println(" n: " + n);
         System.out.println();
 
