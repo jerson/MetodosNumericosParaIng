@@ -90,7 +90,9 @@ public class RungeKutta extends Base {
         for (int i = 0; i < n; i++) {
             System.out.println("I=" + i);
             y0 = this.orden4(funcion, x0, y0, h);
-            x0 += h;
+            x0 += h;            x0 += h;
+
+            X[i + 1] = x0;
             Y[i + 1] = y0;
         }
 
