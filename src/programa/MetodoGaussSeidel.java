@@ -59,7 +59,7 @@ public class MetodoGaussSeidel {
                 double[][] matriz = new double[3][4];
 
 
-				// lo ordene manualmente
+                // lo ordene manualmente
 
                 matriz[0][0] = -5;
                 matriz[0][1] = 1.4;

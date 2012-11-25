@@ -13,6 +13,7 @@ import funcion.*;
  */
 public class Biseccion extends Base {
 
+    
     public double evaluar(Funcion funcion, double xa, double xb, double e) {
 
         System.out.println("Xa: "+xa);
