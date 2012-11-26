@@ -33,6 +33,11 @@ public class Base {
         return interpolacion;
     }
 
+    /**
+     *  clona una matriz
+     * @param matriz
+     * @return 
+     */
     public double[][] clonar(double[][] matriz) {
         double[][] temporal = new double[matriz.length][matriz[0].length];
 
@@ -44,6 +49,12 @@ public class Base {
         return temporal;
     }
 
+    /**
+     * clona un vector 
+     * 
+     * @param x
+     * @return 
+     */
     public double[] clonar(double[] x) {
         double[] tmp = new double[x.length];
 
@@ -285,10 +296,21 @@ public class Base {
         System.out.println("");
     }
 
+    /**
+     * reporta una fila de una matriz con un espaciado por defecto de 5
+     * 
+     * @param fila fila de la matriz
+     */
     public void reportarFilamatriz(double[] fila) {
         this.reportarFilamatriz(fila, 5);
     }
 
+    /**
+     * reporta una fila de una matriz
+     * 
+     * @param fila fila de la matriz
+     * @param ancho espaciado entre datos
+     */
     public void reportarFilamatriz(double[] fila, int ancho) {
 
         System.out.print("[");
@@ -311,6 +333,12 @@ public class Base {
 
     }
 
+    /**
+     * reporta coordenadas X,Y
+     * 
+     * @param x vector X
+     * @param y vector Y
+     */
     public void reportarcoordenadas(double[] x, double[] y) {
 
         int n = x.length;
@@ -349,6 +377,12 @@ public class Base {
 
     }
 
+    /**
+     * reporta una fila de coordenadas
+     * 
+     * @param fila vector
+     * @param ancho  espaciado entre valores
+     */
     public void reportarFilacoordenadas(double[] fila, int ancho) {
 
         System.out.print("[");
@@ -371,11 +405,21 @@ public class Base {
         System.out.print("\n");
 
     }
-    
+    /**
+     * inicializa un vector con 0
+     * @param n el vector a inicializar
+     * @return vector inicalizado
+     */
     public double[] inicializar(double[] n) {
         return this.inicializar(n, 0);
     }
 
+    /**
+     * inicializa un vector con un numero definido
+     * @param n el vector a inicializar
+     * @param defecto numero para inicializar
+     * @return vector inicalizado
+     */
     public double[] inicializar(double[] n, double defecto) {
 
         for (int i = 0; i < n.length; i++) {

@@ -23,7 +23,12 @@ public class MenuItem {
         return this;
     }
 
-   
+   /**
+    * agrega un item al menu
+    * 
+    * @param texto texto del menu
+    * @param funcion funcion del menu
+    */
     public MenuItem(String texto, MenuCallback funcion) {
         this.funcion = funcion;
         this.texto = texto;

@@ -29,10 +29,22 @@ public class Menu extends Consola {
         super();
     }
 
+    /**
+     * agrega un item al menu
+     * 
+     * @param titulo titulo del item
+     * @param callback funcion del item
+     */
     public void agregar(String titulo, MenuCallback callback) {
         lista.add(new MenuItem(titulo, callback));
     }
 
+    /**
+     * agrega un submenu al menu
+     * 
+     * @param titulo titulo del submenu
+     * @param menu menu
+     */
     public void agregar(String titulo, final Menu menu) {
         final Menu padre = this;
 
@@ -55,6 +67,9 @@ public class Menu extends Consola {
         }).setMenu(true));
     }
 
+    /**
+     * muestra el menu
+     */
     public void mostrar() {
 
         this.limpiarPantalla();

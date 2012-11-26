@@ -3,11 +3,17 @@
  * and open the template in the editor.
  */
 package consola;
+
 import java.util.EventListener;
+
 /**
  *
  * @author Gerson
  */
 public interface MenuCallback extends EventListener {
-	public void ejecutar(); 
+
+    /**
+     * funcion que ejecutara el menu
+     */
+    public void ejecutar();
 }

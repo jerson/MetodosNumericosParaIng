@@ -14,6 +14,14 @@ import funcion.*;
 public class Biseccion extends Base {
 
     
+    /**
+     * 
+     * @param funcion funcion a evaluar
+     * @param xa valor de Xa
+     * @param xb valir de Xb
+     * @param e la tolerancia
+     * @return el resultado del metodo
+     */
     public double evaluar(Funcion funcion, double xa, double xb, double e) {
 
         System.out.println("Xa: "+xa);
