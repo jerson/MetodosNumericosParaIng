@@ -113,6 +113,26 @@ public class MetodoLagrange {
                 metodo.evaluar(x,y,numero);
             }
         });
+        submenu.agregar("Ejemplo ", new MenuCallback() {
+            public void ejecutar() {
+
+                double[] x=new double[4];
+                double[] y=new double[4];
+
+                double numero = 270;
+                x[0]=5;
+                x[1]=7;
+                x[2]=9;
+                x[3]=11;
+
+                y[0]=250;
+                y[1]=320;
+                y[2]=400;
+                y[3]=450;
+
+                metodo.evaluar(x,y,numero);
+            }
+        });
 
         menu.agregar("Ejercicios", submenu);
         menu.agregar("Ingresar Datos", new MenuCallback() {

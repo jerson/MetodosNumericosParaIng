@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package programa;
+
 
 import consola.Menu;
 import consola.MenuCallback;
