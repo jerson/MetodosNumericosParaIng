@@ -33,7 +33,7 @@ hay varios ejemplos por cada metodo, adicionalmente implemente una funcion para 
 ##Caracteristicas##
 
 - Controla la cantidad de decimales con los que reportas (para el calculo interno se usan todos los posibles)
-- Calcula el espaciado automaticamente entre numeros, para mejorar la visualización en el reporte
+- Calcula el espaciado automaticamente entre numeros, para mejorar la visualizaciÃ³n en el reporte
 - Puedes elegir si deseas mostrar decimales o fracciones
 
 ##Librerias Requeridas##
