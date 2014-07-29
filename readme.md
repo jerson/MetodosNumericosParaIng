@@ -42,6 +42,11 @@ hay varios ejemplos por cada metodo, adicionalmente implemente una funcion para 
 - commons-math3 (para mostrar las fracciones)  http://commons.apache.org/math/download_math.cgi
 	
 
+##Descarga##
+
+si quieres descargar el proyecto con librerias incluidas, entra a la sección de [Releases](https://github.com/jerson/MetodosNumericosParaIng/releases) 
+>https://github.com/jerson/MetodosNumericosParaIng/releases
+
 ##Ejemplos##
 
 
